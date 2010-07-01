@@ -7,6 +7,7 @@ $recentPosts = new WP_Query();
 $recentPosts->query("showposts=$published_posts");
 ?>
 
+<div id="main" style="width:<?php echo $published_posts * 620; ?>px;">
 <? while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
 
 		<script type='text/javascript'> 

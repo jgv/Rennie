@@ -9,6 +9,4 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.cycle.all.latest.js"></script>
 
-<?php remove_filter('the_content', 'wpautop'); /* stop the annoying auto <p> tags */ ?>
-
-<div id="main">
+<?php include_once('functions.php'); ?>
