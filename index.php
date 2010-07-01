@@ -2,14 +2,14 @@
 /*count posts */
 $count_posts = wp_count_posts('post');
 $published_posts = $count_posts->publish;
-$myposts = get_posts('numberposts=-1&orderby=post_date&order=DESC');
-$recentPosts = new WP_Query();
-$recentPosts->query("showposts=$published_posts");
+
+
+print print_logo();
+
 ?>
 
 <div id="main" style="width:<?php echo $published_posts * 620; ?>px;">
-<? while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
-
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<script type='text/javascript'> 
 					$(function() {
     			$('#s<?php the_ID(); ?>')
@@ -30,7 +30,7 @@ $recentPosts->query("showposts=$published_posts");
 		</div>
 
 <?php endwhile; ?>
-
+<?php endif; ?>
 
 
 <?php get_footer(); ?>
