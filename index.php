@@ -12,7 +12,7 @@ $published_posts = $count_posts->publish;
 		<script type='text/javascript'> 
 		$(document).ready(function() {
 			$('#s<?php the_ID(); ?>')
-				.before	('<div id="n<?php the_ID(); ?>" class="nav">')
+				.after('<div id="n<?php the_ID(); ?>" class="nav">')
 				.cycle({
 					fx: 'fade',
 					speed: 'medium',
