@@ -3,8 +3,9 @@
 $count_posts = wp_count_posts('post');
 $published_posts = $count_posts->publish;
 
+?>
 
-print print_logo();
+<a href="mailto:<?php bloginfo('admin_email'); ?>"><?php print print_logo(); ?></a>
 
 ?>
 
