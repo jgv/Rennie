@@ -2,28 +2,34 @@
 /*count posts */
 $count_posts = wp_count_posts('post');
 $published_posts = $count_posts->publish;
-
+$myposts = get_posts('numberposts=-1&orderby=post_date&order=DESC');
+$recentPosts = new WP_Query();
+$recentPosts->query("showposts=$published_posts");
 ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
-		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<? while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
+
 		<script type='text/javascript'> 
-			$(document).ready(function() {
+					$(function() {
     			$('#s<?php the_ID(); ?>')
-    			.after('<div id="nav<?php the_ID(); ?>">')
-    			.cycle({
-				fx: 'fade',
-				next: '#s<?php the_ID(); ?>', 
-    			timeout: 0, 
-    			pager:  '#nav<?php the_ID(); ?>'
+					.after	('<div id="n<?php the_ID(); ?>" class="nav">')
+						.cycle({
+						fx: 'fade',
+						speed: 'fast',
+						timeout: 0,
+						next: '#s<?php the_ID(); ?>',
+						pager:  '#n<?php the_ID(); ?>',
+				});
 			});
-		});
 		</script>
-		<div id="s<?php the_ID();?>">
+		<div id="post-<?php the_ID(); ?>" class="sup">
+		<div id="s<?php the_ID();?>" class="images">
 		<?php the_content(); ?>
 		</div>
-		<?php the_excerpt(); ?>
 		</div>
-		<?php endwhile;?>
+
+<?php endwhile; ?>
+
+
 
 <?php get_footer(); ?>

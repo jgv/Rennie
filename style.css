@@ -7,8 +7,7 @@ Author URI: http://jonathanvingiano.com
 Version: 0.1
 */
 
-//@import url(css/yui-reset.css);
-* {margin: 0;padding: 0;}
+@import url(css/yui-reset.css);
 
 /* TYPOGRAPHY */
 @font-face {
@@ -16,16 +15,32 @@ font-family: "Trade Gothic";
 src: url("css/TradeGothicLTStdBdCn20Obl.otf")
 }
 p { font-size: 1.2em; margin: 0 0 15px 0; }
-h1 { font-size: 4.0em; letter-spacing: -1px; color: #ccc; }
-h2	{  font-size: 3.0em; letter-spacing: -1px; color: #ccc; }
-a	{ color: #0066cc; }
-a:hover	{ color: #ccc; }
-
+a { color: #000; text-decoration: none;}
+a:hover	{ color: #aaa; text-decoration: underline; }
+a:visited { color: #000; text-decoration: none; }
+a.activeSlide { color:#ccc; }
+div.nav a { font-size: 18px;}
 /* STRUCTURE */
 
-body { font-size: 62.5%; font-family: 'Trade Gothic', Helvetica, sans-serif;background: #ffffff; padding: 20px; color: #999; }
+body { font-size: 80%; font-family: 'Trade Gothic', Helvetica, sans-serif;background: #ffffff; padding: 20px; color: #999; }
 
 
-.post { width: 500px;  }
 
-.post img { cursor: pointer; }
+.sup img { cursor: pointer; }
+
+#main {
+position: absolute;
+top: 120px; left: 40px;
+width: 6000px;
+margin: 0;
+padding: 0;
+}
+
+.images { margin-bottom: 10px;}
+.sup {
+width: 500px;
+float: left;
+line-height: 22px;
+margin: 30px;
+padding: 5px 30px 30px 30px;
+}
