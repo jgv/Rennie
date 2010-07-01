@@ -13,7 +13,7 @@ print print_logo();
 		<script type='text/javascript'> 
 					$(function() {
     			$('#s<?php the_ID(); ?>')
-					.after	('<div id="n<?php the_ID(); ?>" class="nav">')
+					.before	('<div id="n<?php the_ID(); ?>" class="nav">')
 						.cycle({
 						fx: 'fade',
 						speed: 'fast',
