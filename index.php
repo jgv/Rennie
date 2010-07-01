@@ -1,5 +1,5 @@
 <?php get_header();
-/*count posts */
+/* count posts to determine the width of main div */
 $count_posts = wp_count_posts('post');
 $published_posts = $count_posts->publish;
 ?>
@@ -8,6 +8,7 @@ $published_posts = $count_posts->publish;
 
 <div id="main" style="width:<?php echo $published_posts * 620; ?>px;">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<!-- need to create an instance of jquery cycle for each post -->
 		<script type='text/javascript'> 
 		$(document).ready(function() {
 			$('#s<?php the_ID(); ?>')
@@ -21,14 +22,13 @@ $published_posts = $count_posts->publish;
 			});
 		});
 		</script>
-		<div id="post-<?php the_ID(); ?>" class="thepost">
-			<div id="s<?php the_ID();?>" class="images">
+	<div id="post-<?php the_ID(); ?>" class="thepost">
+		<div id="s<?php the_ID();?>" class="images">
+		<!-- each post has to be a list of images -->
 		<?php the_content(); ?>
-			</div>
 		</div>
+	</div>
 
 <?php endwhile; ?>
 <?php endif; ?>
-
-
 <?php get_footer(); ?>
