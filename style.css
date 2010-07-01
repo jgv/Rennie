@@ -11,25 +11,34 @@ Tags: horizontal scroll, photos, minimal, clean
 @import url(css/yui-reset.css);
 
 /* TYPOGRAPHY */
+
 @font-face { font-family: "Trade Gothic"; src: url("css/TradeGothicLTStdBdCn20Obl.otf") }
+
 p { font-size: 1.2em; margin: 0 0 15px 0; }
+
 a { color: #000; text-decoration: none; }
+
 a:hover	{ color: #aaa; text-decoration: underline; }
+
 a:visited { color: #000; text-decoration: none; }
+
 a.activeSlide { color:#ccc; }
+
 div.nav a { font-size: 12px; letter-spacing: 2px; }  
+
 /* STRUCTURE */
 
 body { font-size: 80%; font-family: 'Trade Gothic', Helvetica, sans-serif;background: #ffffff; padding: 20px; color: #999; overflow-y: hidden; }
 
-
-.sup img { cursor: pointer; }
-
 #main { position: absolute; top: 120px; left: 40px; margin: 0; padding: 0;}
 
+.thepost { width: 500px; float: left; line-height: 22px; margin: 30px; padding: 5px 30px 30px 30px; }
+
+.thepost img { cursor: pointer; }
+
 .images { margin-bottom: 10px;}
+
 .images img {width:500px!important;max-height: 400px!important;}
-.sup { width: 500px; float: left; line-height: 22px; margin: 30px; padding: 5px 30px 30px 30px; }
 
 .logo { position:fixed;  }
 
