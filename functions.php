@@ -47,7 +47,7 @@ function ud_section_text() {
     }
 }
 
-function print_logo(){
+function print_logo(){ /* to display on frontend */
    $options = get_option('ud_options');	
 	if ($file = $options['file']) {
         echo "<img src='{$file['url']}' width='100' height='100' class='logo' />";
@@ -56,6 +56,8 @@ function print_logo(){
 
 function ud_setting_filename() {
     echo '<input type="file" name="ud_filename" size="40" />';
+    echo "<p>Make sure the image is 100px by 100px!</p>";
+
 }
 
 function ud_options_validate($input) {
