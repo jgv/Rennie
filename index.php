@@ -15,7 +15,7 @@ $published_posts = $count_posts->publish;
 				.before	('<div id="n<?php the_ID(); ?>" class="nav">')
 				.cycle({
 					fx: 'fade',
-					speed: 'fast',
+					speed: 'medium',
 					timeout: 0,
 					next: '#s<?php the_ID(); ?>',
 					pager:  '#n<?php the_ID(); ?>',
