@@ -62,7 +62,7 @@ function ud_setting_filename() {
 
 function ud_options_validate($input) {
     $newinput = array();
-    require_once( ABSPATH . 'wp-admin/includes/file.php' );
+    /* require_once( ABSPATH . 'wp-admin/includes/file.php' ); uncomment this if developing locally */
     if ($_FILES['ud_filename']) {
         $overrides = array('test_form' => false); 
         $file = wp_handle_upload($_FILES['ud_filename'], $overrides);
