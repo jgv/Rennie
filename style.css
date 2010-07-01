@@ -16,7 +16,7 @@ a { color: #000; text-decoration: none; }
 a:hover	{ color: #aaa; text-decoration: underline; }
 a:visited { color: #000; text-decoration: none; }
 a.activeSlide { color:#ccc; }
-div.nav a { font-size: 16px; }  
+div.nav a { font-size: 12px; letter-spacing: 2px; }  
 /* STRUCTURE */
 
 body { font-size: 80%; font-family: 'Trade Gothic', Helvetica, sans-serif;background: #ffffff; padding: 20px; color: #999; }

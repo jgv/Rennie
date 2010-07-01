@@ -16,7 +16,7 @@ function ud_admin_init() {
 // add the admin options page
 add_action('admin_menu', 'ud_admin_add_page');
 function ud_admin_add_page() {
-    $mypage = add_theme_page('Upload Logo', 'Upload Demo', 'manage_options', 'ud', 'ud_options_page');
+    $mypage = add_theme_page('Upload Logo', 'Upload Logo', 'manage_options', 'ud', 'ud_options_page');
 }
 
 // display the admin options page
