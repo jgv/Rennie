@@ -6,7 +6,7 @@ $published_posts = $count_posts->publish;
 
 <a href="mailto:<?php bloginfo('admin_email'); ?>"><?php print print_logo(); ?></a>
 
-<div id="main" style="width:<?php echo $published_posts * 620; ?>px;">
+<div id="main" style="width:<?php echo $published_posts * 820; ?>px;">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <!-- need to create an instance of jquery cycle for each post -->
 		<script type='text/javascript'> 

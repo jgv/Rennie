@@ -5,7 +5,7 @@ Description: A simple theme for portfolios. Graphic designers in mind. All image
 Author: Jonathan Vingiano
 Author URI: http://jonathanvingiano.com
 Version: 1.0
-Tags: horizontal scroll, photos, minimal, clean
+Tags: horizontal scroll, photos, minimal, clean, infinite columns, gallery
 */
 
 @import url(css/yui-reset.css);
@@ -32,12 +32,12 @@ body { font-size: 80%; font-family: 'Trade Gothic', Helvetica, sans-serif;backgr
 
 #main { position: absolute; top: 120px; left: 40px; margin: 0; padding: 0;}
 
-.thepost { width: 500px; float: left; line-height: 22px; margin: 30px; padding: 5px 30px 30px 30px; }
+.thepost { width: 700px; float: left; line-height: 22px; margin: 30px; padding: 5px 30px 30px 30px; }
 
 .thepost img { cursor: pointer; }
 
 .images { margin-bottom: 10px;}
 
-.images img {width:500px!important;max-height: 400px!important;}
+.images img {width:700px!important;height:467px!important;}
 
 .logo { position:fixed; }
