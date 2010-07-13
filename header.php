@@ -12,8 +12,8 @@
 
 <script type="text/javascript">
 
-var opts = {	step: 200,
-		trigger: 100
+var opts = {	step: 100,
+		trigger: 200
 		};
 $.autoscroll.init(opts);
 </script>
