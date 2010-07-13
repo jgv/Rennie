@@ -6,8 +6,10 @@ $published_posts = $count_posts->publish;
 
 <a href="mailto:<?php bloginfo('admin_email'); ?>"><?php print print_logo(); ?></a>
 
-<div id="main" style="width:<?php echo $published_posts * 820; ?>px;">
+<div id="main" class="scroll" style="width:<?php echo $published_posts * 820; ?>px;">
+<ul class="gallery-list">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<li>
 <!-- need to create an instance of jquery cycle for each post -->
 		<script type='text/javascript'> 
 		$(document).ready(function() {
@@ -28,7 +30,8 @@ $published_posts = $count_posts->publish;
 		<?php the_content(); ?>
 		</div>
 	</div>
-
+</li>
 <?php endwhile; ?>
 <?php endif; ?>
+</ul>
 <?php get_footer(); ?>

@@ -30,7 +30,7 @@ div.nav a { font-size: 12px; letter-spacing: 2px; }
 
 body { font-size: 80%; font-family: 'Trade Gothic', Helvetica, sans-serif;background: #ffffff; padding: 20px; color: #999; overflow-y: hidden; }
 
-#main { position: absolute; top: 120px; left: 40px; margin: 0; padding: 0;}
+#main { position: absolute; top: 120px; left: 40px; margin: 75px 0px 0px 0px; padding: 0;}
 
 .thepost { width: 700px; float: left; line-height: 22px; margin: 30px; padding: 5px 30px 30px 30px; }
 
@@ -41,3 +41,4 @@ body { font-size: 80%; font-family: 'Trade Gothic', Helvetica, sans-serif;backgr
 .images img {width:700px!important;height:467px!important;}
 
 .logo { position:fixed; }
+
