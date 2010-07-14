@@ -40,6 +40,6 @@ body { font-size: 80%; font-family: 'Trade Gothic', Helvetica, sans-serif;backgr
 
 .logo { position:fixed; }
 
-#tooltip { position: absolute; z-index: 3000; color:black; text-transform: uppercase; font-style: italic; font-size: 17px; font-family: Times, Georgia, serif; padding: 5px; width:350px  }
+#tooltip { position: absolute; z-index: 3000; color:black; text-transform: uppercase; font-style: italic; font-size: 17px; font-family: Times, Georgia, serif; padding: 5px; width:400px  }
 
 #tooltip h3, #tooltip div { margin: 0; }
