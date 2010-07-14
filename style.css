@@ -34,11 +34,12 @@ body { font-size: 80%; font-family: 'Trade Gothic', Helvetica, sans-serif;backgr
 
 .thepost { width: 700px; float: left; line-height: 22px; margin: 30px; padding: 5px 30px 30px 30px; }
 
-.thepost img { cursor: pointer; }
-
 .images { margin-bottom: 10px;}
 
-.images img {width:700px!important;height:467px!important;}
+.images img {width:700px!important;height:467px!important;cursor:pointer;}
 
 .logo { position:fixed; }
 
+#tooltip { position: absolute; z-index: 3000; color:black; text-transform: uppercase; font-style: italic; font-size: 17px; font-family: Times, Georgia, serif; padding: 5px; width:350px  }
+
+#tooltip h3, #tooltip div { margin: 0; }

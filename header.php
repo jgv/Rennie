@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+
+<!--
+       _________    __
+      / / ____/ |  / /
+ __  / / / __ | | / / 
+/ /_/ / /_/ / | |/ /  
+\____/\____/  |___/   
+                   
+find this theme at http://github.com/jgv/rennie
+-->
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php bloginfo('name'); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -10,20 +20,23 @@
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.cycle.all.latest.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.autoscroll.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.lazyload.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.tooltip.js"></script>
-
+<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.tooltip.min.js"></script>
 <script type="text/javascript">
-
-var opts = {	step: 100,
+$(document).ready(function(){
+   var opts = {	step: 100,
 		trigger: 300,
 		interval: 20
 		};
-$.autoscroll.init(opts);
-$(".alignnone").tooltip();
-$("img").lazyload({
-   effect : "fadeIn",
+   $.autoscroll.init(opts);
+   $(".images img").tooltip({
+      showURL: false,
+      track: true,
+      delay: 5,
+      top: 20, 
+      left: 10
+   });
 });
-
+$(".images img").lazyload();
 </script>
 
 <?php include_once('functions.php'); ?>
