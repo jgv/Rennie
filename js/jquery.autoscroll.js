@@ -86,6 +86,6 @@ $.autoscroll = {
 			e.cursor.x = 0;
 		}
 
-		window.scrollTo(e.scroll.x, e.scroll.x);
+		window.scrollTo(e.scroll.x, e.scroll.y);
 	}
 };
