@@ -9,7 +9,7 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.cycle.all.latest.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.autoscroll.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.lazyload.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/js/jquery.tooltip.js"></script>
 
 <script type="text/javascript">
