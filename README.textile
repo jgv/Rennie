@@ -1,7 +1,9 @@
 h3. README
 
-Rennie is a WordPress theme created with simplicity in mind. Initially created for "Thomas Rennie (Thomas Rennie) ":http://www.thomasrennie.net although available to everyone. 
+Rennie is a WordPress theme created with simplicity in mind. Initially created for "Thomas Rennie ":Rennie although available to everyone. 
 
 h4. Quirks
 
 Right now Rennie is hardcoded for images at 700 by 467. This will become more flexible in the future. 
+
+[Rennie]http://thomasrennie.net
