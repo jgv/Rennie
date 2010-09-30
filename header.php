@@ -28,8 +28,9 @@ $(document).ready(function(){
 		interval: 20
 		};
    $.autoscroll.init(opts);
-   $(".images img").tooltip({
+   $("#main img").tooltip({
       showURL: false,
+      containter: $("#main"),
       track: true,
       delay: 5,
       top: 20, 
