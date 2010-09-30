@@ -30,14 +30,17 @@ $(document).ready(function(){
    $.autoscroll.init(opts);
    $("#main img").tooltip({
       showURL: false,
-      containter: $("#main"),
       track: true,
       delay: 5,
       top: 20, 
       left: 10
    });
 });
-$(".images img").lazyload();
+$("#main img").lazyload({
+     container: $("#main"),
+     effect: "fadeIn",
+     
+});
 </script>
 
 <?php include_once('functions.php'); ?>

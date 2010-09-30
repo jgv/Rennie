@@ -28,6 +28,7 @@ div.nav a { font-size: 12px; letter-spacing: 2px; }
 
 /* STRUCTURE */
 
+
 body { font-size: 80%; font-family: 'Trade Gothic', Helvetica, sans-serif;background: #ffffff; padding: 5px 20px; color: #999; overflow-y: hidden; overflow-x: hidden; }
 
 #main { position: absolute; top: 120px; left: 40px; margin: 15px 0px 0px 0px; padding: 0;}
@@ -43,3 +44,15 @@ body { font-size: 80%; font-family: 'Trade Gothic', Helvetica, sans-serif;backgr
 #tooltip { position: absolute; z-index: 3000; color:black; text-transform: uppercase; font-style: italic; font-size: 17px; font-family: Times, Georgia, serif; padding: 5px; width:400px  }
 
 #tooltip h3, #tooltip div { margin: 0; }
+
+
+/* CLEARFIX */
+
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;
+}
+ 
+.clearfix { display: inline-block; }
+ 
+html[xmlns] .clearfix { display: block; }
+ 
+* html .clearfix { height: 1%; }
