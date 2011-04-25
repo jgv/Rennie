@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="<?php bloginfo('template_directory') ?>/js/jquery.min.js"%3E%3C/script%3E'))</script>
 <script src="<?php bloginfo('template_directory') ?>/js/jquery.plugins.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
