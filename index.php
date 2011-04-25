@@ -1,10 +1,10 @@
-<?php get_header();
+<?php get_header(); ?>
+
+<?php
 /* count posts to determine the width of main div */
 $count_posts = wp_count_posts('post');
 $published_posts = $count_posts->publish;
 ?>
-
-<a href="mailto:<?php bloginfo('admin_email'); ?>"><?php print print_logo(); ?></a>
 
 <div id="main" class="scroll clearfix" style="width:<?php echo $published_posts * 820; ?>px;">
 
@@ -24,7 +24,7 @@ $published_posts = $count_posts->publish;
 		});
 		</script>
 	<div id="post-<?php the_ID(); ?>" class="thepost">
-		<div id="s<?php the_ID();?>" class="images">
+	  <div id="s<?php the_ID();?>" class="images">
 		<!-- each post has to be a list of images -->
 		<?php the_content(); ?>
 		</div>
