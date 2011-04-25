@@ -2,6 +2,8 @@
 
 remove_filter('the_content', 'wpautop'); /* stop the annoying auto <p> tags */
 
+update_option('image_default_link_type', ''); /* stop wp from automatically making images links to themselves */
+
 /*
 add_action('admin_menu', 'logo_menu');
 
